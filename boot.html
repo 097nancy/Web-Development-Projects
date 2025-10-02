@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Flexbox Template</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.work-grid img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.feature-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature-box span {
+  font-size: 2rem;
+}
+
+.feature-box h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.testimonials {
+  background: #fff;
+  padding: 3rem 2rem;
+}
+
+.testimonial-box {
+  background: #eee;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.testimonial-box span {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .work-grid, .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+</style>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Website Logo</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Responsive Flexbox Template</h1>
+    </div>
+  </header>
+
+  <section class="work">
+    <h2>Some Of Our Work</h2>
+    <p>Explore our latest projects and creative landscapes.</p>
+    <div class="work-grid">
+      <img src="coast.jpg" alt="Underwater" />
+      <img src="island.jpg" alt="Island" />
+      <img src="balloon.jpg" alt="balloon" />
+      <img src="mountain.jpg" alt="Forest" />
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Features And Services</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <span>📸</span>
+        <h3>Photography</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature-box">
+        <span>🎨</span>
+        <h3>Web Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature-box">
+        <span>💼</span>
+        <h3>Consulting</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Others Say</h2>
+
+</body>
+</html>
