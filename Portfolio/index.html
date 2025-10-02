@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nancy's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 bg-white dark:bg-gray-800 shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Nancy !</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-primary">Home</a>
+        <a href="#about" class="hover:text-primary">About Me</a>
+        <a href="#projects" class="hover:text-primary">Projects</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+      <button class="md:hidden text-2xl">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-center"
+    style="background-image: url('')">
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg animate-fadeIn">
+      <h2 class="text-4xl font-bold text-white">Hello, I'm Nancy Singh</h2>
+      <p class="text-lg text-white mt-2">I'm a Full Stack Developer skilled in both Java and MERN stacks, building
+        scalable web apps with robust backend logic and responsive front-end design. From Spring Boot and MySQL to React
+        and MongoDB, I craft seamless user experiences across diverse tech ecosystems.</p>
+      <a href="#projects"
+        class="mt-4 inline-block bg-primary text-white px-6 py-2 rounded hover:bg-primary-dark transition">View My
+        Work</a>
+    </div>
+  </section>
+  <!-- About Me Section -->
+  <section id="about" class="py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="nancy.jpg" alt="Profile" class="mx-auto rounded-full w-32 h-32 mb-4" />
+      <h3 class="text-2xl font-semibold mb-2">About Me</h3>
+      <p class="mb-6">I'm a final-year Computer Science student passionate about web development and AI. I love building
+        responsive websites and experimenting with new technologies.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <span class="bg-gray-100 dark:bg-gray-700 p-2 rounded">HTML</span>
+        <span class="bg-gray-100 dark:bg-gray-700 p-2 rounded">CSS</span>
+        <span class="bg-gray-100 dark:bg-gray-700 p-2 rounded">JavaScript</span>
+        <span class="bg-gray-100 dark:bg-gray-700 p-2 rounded">Java</span>
+        <span class="bg-gray-100 dark:bg-gray-700 p-2 rounded">Bootstrap</span>
+        <span class="bg-gray-100 dark:bg-gray-700 p-2 rounded">SQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-2xl font-semibold text-center mb-8">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Project Card -->
+        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow hover:shadow-lg transition">
+          <img src="img3.png" alt="Project 1" class="mb-4 rounded" />
+          <h4 class="text-xl font-bold mb-2">Project One</h4>
+          <p class="mb-2">A responsive Home Interior site built with HTML, CSS.</p>
+          <a href="#" class="text-primary hover:underline">View Project</a>
+        </div>
+        <!-- Repeat for other projects -->
+        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow hover:shadow-lg transition">
+          <img src="img2.png" alt="Project 2" class="mb-4 rounded" />
+          <h4 class="text-xl font-bold mb-2">Project Two</h4>
+          <p class="mb-2">Tic Tac Toe game using Html,Css and Java Script</p>
+          <a href="#" class="text-primary hover:underline">View Project</a>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow hover:shadow-lg transition">
+          <img src="img1.png" alt="Project 3" class="mb-4 rounded" />
+          <h4 class="text-xl font-bold mb-2">Project Three</h4>
+          <p class="mb-2">A responsive site using Bootstarp</p>
+          <a href="#" class="text-primary hover:underline">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4">
+    <div class="max-w-xl mx-auto">
+      <h3 class="text-2xl font-semibold text-center mb-8">Contact Me</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name"
+          class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary" />
+        <input type="email" placeholder="Email"
+          class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary" />
+        <textarea placeholder="Message" rows="5"
+          class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+        <button type="submit" class="w-full py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-700">Send Message</button>
+      </form>
+      <div class="flex justify-center space-x-6 mt-6">
+        <a href="#" class="text-xl hover:text-primary"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-xl hover:text-primary"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-xl hover:text-primary"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-700 py-6 text-center">
+    <p>© 2025 Nancy</p>
+    <div class="space-x-4 mt-2">
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Terms of Service</a>
+    </div>
+    <div class="mt-4 space-x-6">
+
+      <a href="#" class="hover:text-gray-400">LinkedIn</a>
+
+      <a href="#" class="hover:text-gray-400">GitHub</a>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
